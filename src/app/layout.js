@@ -13,6 +13,8 @@ import {
 	earthHeading,
 	minimalBody,
 	minimalHeading,
+	binswarHeading,
+	binswarBody,
 } from "../../config/fonts";
 import site from "../../config/site";
 import Nav from "./components/nav/Nav";
@@ -38,15 +40,17 @@ const fontClasses = [
 	earthHeading.variable,
 	minimalBody.variable,
 	minimalHeading.variable,
+	binswarHeading.variable,
+	binswarBody.variable,
 ].join(" ");
 
 export default function RootLayout({ children }) {
 	return (
 		<html
 			lang="en"
-			data-theme="clean"
-			data-font="editorial"
-			data-style="split-contained"
+			data-theme="slate-mauve"
+			data-font="binswar"
+			data-style="background-hero"
 			data-shape="round"
 			data-spacing="airy"
 			className={fontClasses}
@@ -62,7 +66,7 @@ export default function RootLayout({ children }) {
 				<a href="#main-content" className="skip-nav">
 					Skip to main content
 				</a>
-				<DesignPanel />
+				{/* <DesignPanel /> */}
 				<Nav />
 
 				{children}

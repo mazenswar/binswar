@@ -8,20 +8,21 @@ import "./chipnav.scss";
    Edit this section per project
    ========================= */
 
-const chipNavConfig = {
-	label: "Jump to section",
-	chips: [
-		{ id: "section-one", label: "Section One" },
-		{ id: "section-two", label: "Section Two" },
-		{ id: "section-three", label: "Section Three" },
-	],
-};
+// const chipNavConfig = {
+// 	label: "Jump to section",
+// 	chips: [
+// 		{ id: "section-one", label: "Section One" },
+// 		{ id: "section-two", label: "Section Two" },
+// 		{ id: "section-three", label: "Section Three" },
+// 	],
+// };
 
 /* =========================
    COMPONENT
    ========================= */
 
-export default function ChipNav() {
+export default function ChipNav({ chipNavConfig }) {
+	const { label, chips } = chipNavConfig;
 	useEffect(() => {
 		const nav = document.querySelector(".chip-nav");
 		if (!nav) return;
@@ -51,10 +52,10 @@ export default function ChipNav() {
 	}, []);
 
 	return (
-		<nav className="chip-nav" aria-label={chipNavConfig.label}>
+		<nav className="chip-nav" aria-label={label}>
 			<div className="container">
 				<ul className="chip-nav__list" role="list">
-					{chipNavConfig.chips.map((chip) => (
+					{chips.map((chip) => (
 						<li key={chip.id}>
 							<a href={`#${chip.id}`} className="chip-nav__chip">
 								{chip.label}

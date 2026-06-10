@@ -1,227 +1,176 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import Hero from "./components/sections/hero/Hero";
 import CardGrid from "./components/sections/cardGrid/CardGrid";
 import TwoColumn from "./components/sections/twoColumn/TwoColumn";
 import Steps from "./components/sections/steps/Steps";
 import BookingCTA from "./components/sections/bookingCTA/BookingCTA";
-
-// const heroConfig = {
-// 	heading: "Your Heading Here",
-// 	subheading:
-// 		"A brief description of what you do and who you serve. Keep it clear and human.",
-// 	cta: {
-// 		text: "Get started",
-// 		href: "/contact",
-// 		variant: "primary",
-// 	},
-// 	image: {
-// 		src: "/home/profile-hero.jpg",
-// 		alt: "Descriptive alt text",
-// 		width: 400,
-// 		height: 400,
-// 	},
-// 	caption: {
-// 		name: "Your Name",
-// 		title: "Licensed Clinical Psychologist",
-// 	},
-// };
-
-// VARIANT A
-// const heroConfig = {
-// 	variant: "split-contained",
-// 	eyebrow: "Currently accepting new clients",
-// 	heading: "A space to be heard, supported, and understood.",
-// 	subheading:
-// 		"Individual therapy for adults navigating anxiety, life transitions, and relationship challenges. Virtual sessions across New Jersey.",
-// 	cta: {
-// 		text: "Book a free consultation",
-// 		href: "/contact",
-// 		variant: "primary",
-// 	},
-// 	ctaSecondary: { text: "Learn more", href: "/about", variant: "secondary" },
-// 	images: {
-// 		portrait: {
-// 			src: "/hero/variant-abd.jpg",
-// 			alt: "Dr. Sarah Mitchell, Licensed Therapist",
-// 		},
-// 	},
-// 	caption: {
-// 		name: "Dr. Sarah Mitchell",
-// 		title: "Licensed Clinical Social Worker",
-// 	},
-// };
-
-// VARIANT B
-
-// const heroConfig = {
-// 	variant: "split-rectangular",
-// 	eyebrow: "Virtual therapy · New Jersey",
-// 	heading: "Therapy that meets you where you are.",
-// 	subheading:
-// 		"You don't have to navigate this alone. I work with adults facing anxiety, burnout, and major life changes in a warm, judgment-free space.",
-// 	cta: { text: "Get started", href: "/contact", variant: "primary" },
-// 	ctaSecondary: { text: "How it works", href: "/services", variant: "ghost" },
-// 	images: {
-// 		portrait: { src: "/hero/variant-abd.jpg" },
-// 	},
-// 	caption: {
-// 		name: "Dr. Sarah Mitchell",
-// 		title: "LCSW · Anxiety & Life Transitions",
-// 	},
-// };
-
-// VARIANT C
-
-// const heroConfig = {
-// 	variant: "full-bleed",
-// 	eyebrow: "Individual & couples therapy",
-// 	heading: "Find your way back to yourself.",
-// 	subheading:
-// 		"A private, compassionate practice offering evidence-based therapy for adults in New Jersey.",
-// 	cta: {
-// 		text: "Schedule a consultation",
-// 		href: "/contact",
-// 		variant: "primary",
-// 	},
-// 	images: {
-// 		background: { src: "/hero/variant-c.jpg", alt: "" },
-// 	},
-// 	caption: null,
-// };
-
-// VARIANT D
-
-// const heroConfig = {
-// 	variant: "asymmetric",
-// 	heading: "Rooted in care. Grounded in evidence.",
-// 	subheading:
-// 		"Therapy for adults who are ready to do the work. Specializing in anxiety, trauma, and identity.",
-// 	cta: { text: "Book a consultation", href: "/contact", variant: "primary" },
-// 	images: {
-// 		portrait: { src: "/hero/variant-abd.jpg", alt: "Therapy office interior" },
-// 	},
-// 	caption: { name: "Dr. Sam Mitchell", title: "Licensed Psychologist" },
-// };
-
-// VARIANT E
-
-// const heroConfig = {
-// 	variant: "centered",
-// 	eyebrow: "Welcoming new clients",
-// 	heading: "Therapy for the whole person.",
-// 	subheading:
-// 		"A warm, affirming space for adults seeking support with anxiety, relationships, and personal growth. Currently offering virtual sessions across New Jersey.",
-// 	cta: { text: "Start your journey", href: "/contact", variant: "primary" },
-// 	ctaSecondary: {
-// 		text: "Meet your therapist",
-// 		href: "/about",
-// 		variant: "secondary",
-// 	},
-// 	images: {
-// 		portrait: { src: "/hero/variant-e.jpg", alt: "Calm therapy office space" },
-// 	},
-// 	caption: null,
-// };
-
-// VARIANT F
+import FeatureGrid from "./components/sections/featureGrid/FeatureGrid";
+import AudienceSection from "./components/sections/audienceSection/AudienceSection";
+import CTABanner from "./components/sections/ctaBanner/CTABanner";
 
 const heroConfig = {
 	variant: "background-hero",
-	eyebrow: "Now accepting new clients",
-	heading: "You deserve a space that feels safe.",
+	eyebrow: "",
+	heading: "The meaningful digital presence your practice deserves",
 	subheading:
-		"Individual therapy for adults navigating anxiety, burnout, and life transitions. Virtual sessions across New Jersey.",
+		"We build custom websites for therapists and small practices, designed to reflect the quality of your work and built so the right clients can find you.",
 	cta: {
 		text: "Book a free consultation",
 		href: "/contact",
 		variant: "primary",
 	},
-	ctaSecondary: { text: "Learn more", href: "/about", variant: "secondary" },
+	// ctaSecondary: { text: "Learn more", href: "/services", variant: "secondary" },
 	images: {
-		landscape: { src: "/hero/variant-e.jpg", alt: "" },
-		portrait: {
-			src: "/hero/variant-abd.jpg",
-			alt: "Calm therapy office space",
+		background: {
+			src: "/hero/hero-a.jpg",
+			alt: "Mazen Alswar, Binswar Founder",
 		},
-		background: { src: "/hero/variant-c.jpg", alt: "" },
+	},
+	caption: {
+		name: "Mazen Alswar",
+		title: "Founder",
 	},
 };
 
-////////////////////////
-///////////////////////
-//////////////////////
-//////////////////////
-////////////////////
-///////////////////
+/////////////////////
+// FEATURE GRID CONFIG
 
-const cardGridConfig = {
-	heading: "What We Can Help With",
-	subheading:
-		"We are here to offer care and perspective as you navigate your journey.",
+const featureGridConfig = {
+	heading: "Everything your practice needs online, in one place.",
+	subheading: null,
+	variant: "card",
+	classNames: "blockTint",
 	cta: {
-		text: "See all services",
+		text: "See our services",
 		href: "/services",
 		variant: "secondary",
 	},
-	cards: [
+	features: [
 		{
-			title: "Individual Therapy",
+			id: "design",
+			title: "Custom Design",
 			description:
-				"A brief description of this service and how it helps your clients.",
-			href: "/services/one",
-			cta: "Learn more",
+				"We build every site around your practice, your voice, your values, and your people. Every detail is fully customizable to reflect exactly who you are and what you offer.",
+			icon: "design",
 		},
 		{
-			title: "Couples Therapy",
+			id: "search",
+			title: "Built to Be Found",
 			description:
-				"A brief description of this service and how it helps your clients.",
-			href: "/services/two",
-			cta: "Learn more",
+				"We build every site with search engine optimization from the ground up, relevant keywords, clean code, proper metadata, and Google Search Console setup so your practice shows up in the right searches.",
+			icon: "search",
 		},
 		{
-			title: "Groups",
+			id: "accessibility",
+			title: "Accessible to Everyone",
 			description:
-				"A brief description of this service and how it helps your clients.",
-			href: "/services/three",
-			cta: "Learn more",
+				"We build every site to WCAG 2.1 AA accessibility standards, so your site works for every visitor regardless of ability or how they access the web.",
+			icon: "accessibility",
+		},
+		{
+			id: "chart",
+			title: "Real Data, Real Insight",
+			description:
+				"We set up and verify Google Analytics on every project, giving you a clear picture of who is visiting your site, where they are coming from, and how they are finding you online.",
+			icon: "chart",
 		},
 	],
 };
 
-const twoColumnConfig = {
-	heading: "Our Approach",
-	paragraphs: [
-		"First paragraph of content. Describe your approach, philosophy, or whatever this section is about.",
-		"Second paragraph with more detail. Keep it concise and human.",
+///////////
+// Audience Section Config
+
+const audienceConfig = {
+	id: "audience",
+	heading: "Built for therapists and small practices.",
+	body: "If you are building or growing a private practice and want a digital presence that reflects the quality of your work, you are in the right place.",
+	variant: "split",
+	items: [
+		{
+			id: "a1",
+			text: "Solo therapists and counselors in private practice",
+		},
+		{
+			id: "a2",
+			text: "Small group practices ready to grow their online presence",
+		},
+		{
+			id: "a3",
+			text: "Mental health professionals who want to be found by the right clients",
+		},
+		{
+			id: "a4",
+			text: "Practitioners who want a complete digital foundation, not just a website",
+		},
 	],
-	list: [
-		"First key point about your approach or offering",
-		"Second key point that reinforces your value",
-		"Third key point that builds trust",
+	cta: null,
+};
+
+// STEPS
+
+const stepsConfig = {
+	heading: "How It Works",
+	subheading:
+		"Five steps from first conversation to a site that works for your practice.",
+	classNames: "blockTint",
+	steps: [
+		{
+			id: "step-1",
+			title: "We talk",
+			description:
+				"A free 30-minute call to understand your practice and your goals. If it is a good fit, we send a proposal outlining what is included, the timeline, and the cost.",
+		},
+		{
+			id: "step-2",
+			title: "We listen",
+			description:
+				"We send you a comprehensive questionnaire covering everything we need to know about your practice, your audience, and your preferences. This is where we gather the full picture before we touch anything.",
+		},
+		{
+			id: "step-3",
+			title: "We build",
+			description:
+				"We write all the copy, set up a live preview of your site in real design directions, and get on a call to lock in the look together. Then we build the full site. You review it in two rounds of consolidated feedback and sign off before anything goes live.",
+		},
+		{
+			id: "step-4",
+			title: "We launch",
+			description:
+				"We connect your domain, confirm everything is live and working across desktop and mobile, set up your analytics, and submit your site to Google. We manage everything through your 90-day support period, then full ownership transfers to you.",
+		},
+		{
+			id: "step-5",
+			title: "We stay",
+			description:
+				"Your site goes live and we keep watching. For 90 days after launch we monitor your analytics, track how Google is indexing your site, and handle anything that needs attention. We will make sure your practice has the solid digital presence it deserves.",
+		},
 	],
+};
+
+//  CTA Banner
+const ctaBannerConfig = {
+	heading: "Ready to get started?",
+	// classNames: "blockTint",
+	subheading:
+		"The first step is a conversation. Everything else follows from there.",
+	variant: "brand",
 	cta: {
-		text: "Learn more",
-		href: "/about",
+		text: "Book a free consultation",
+		href: "https://calendly.com/mazen-binswar/30min",
 		variant: "secondary",
+		external: true,
 	},
-	image: {
-		src: "/assets/nurture.jpg",
-		alt: "Descriptive alt text for the image",
-		width: 400,
-		height: 400,
-	},
-	imagePosition: "right", // "left" or "right"
+	secondaryCta: null,
 };
 
 export default function Home() {
 	return (
 		<main id="main-content" className="home__page">
 			<Hero heroConfig={heroConfig} />
-			<CardGrid cardGridConfig={cardGridConfig} />
-			<TwoColumn twoColumnConfig={twoColumnConfig} />
-			<Steps />
-			<BookingCTA />
+			<FeatureGrid featureGridConfig={featureGridConfig} />
+			<AudienceSection audienceConfig={audienceConfig} />
+			<Steps stepsConfig={stepsConfig} />
+			<CTABanner ctaBannerConfig={ctaBannerConfig} />
 		</main>
 	);
 }

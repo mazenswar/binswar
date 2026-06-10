@@ -8,6 +8,11 @@ import {
 	Nunito,
 	Lora,
 	Space_Grotesk,
+	Megrim,
+	Plus_Jakarta_Sans,
+	Outfit,
+	Fraunces,
+	Cormorant_Garamond,
 } from "next/font/google";
 
 export const warmBody = Lexend({
@@ -71,4 +76,19 @@ export const minimalHeading = Space_Grotesk({
 	variable: "--font-minimal-heading",
 	display: "swap",
 	weight: ["700"],
+});
+
+// ── Binswar
+
+export const binswarHeading = DM_Serif_Display({
+	subsets: ["latin"],
+	variable: "--font-binswar-heading",
+	display: "swap",
+	weight: ["400"],
+});
+export const binswarBody = Plus_Jakarta_Sans({
+	subsets: ["latin"],
+	variable: "--font-binswar-body",
+	display: "swap",
+	weight: ["300", "400", "500", "600"],
 });

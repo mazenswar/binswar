@@ -11,7 +11,7 @@ const site = {
 	url: "https://binswar.com",
 	locale: "en_US",
 	// Theme
-	theme: "warm", // "warm" | "clean" | "bold" | "earth" | "minimal"
+	theme: "slate-mauve", // "warm" | "clean" | "bold" | "earth" | "minimal"
 	// Analytics
 	analytics: {
 		ga4: "G-XXXXXXXXXX", // or null to disable
