@@ -5,20 +5,22 @@ import PricingCards from "../components/sections/pricingCard/PricingCard";
 import AddonsGrid from "../components/sections/addonsGrid/AddonsGrid";
 import TwoColumn from "../components/sections/twoColumn/TwoColumn";
 import OngoingSupport from "../components/sections/ongoingSupport/OngoingSupport";
+import GeometricNetwork from "../components/illustrations/GeometricNetwork";
+import CTABanner from "../components/sections/ctaBanner/CTABanner";
 
 const servicesHeroConfig = {
 	eyebrow: null, // optional label above heading e.g. "Our Services"
-	heading: "Services",
-	subheading:
-		"A brief description of what this page covers. Keep it clear and welcoming.",
+	heading: "Custom Websites for Therapists and Small Practices",
+	subheading: "Everything a practice needs for a meaningful online presence.",
 	image: null,
 	// Optional image example:
 	// image: {
-	// 	src: "/page-hero.webp",
-	// 	alt: "Descriptive alt text",
+	// 	src: "/assets/services/services-hero.svg",
+	// 	alt: "geometric network illustration",
 	// 	width: 600,
-	// 	height: 400,
+	// 	height: 600,
 	// },
+	illustration: <GeometricNetwork />,
 	align: "left", // "left" or "center"
 };
 
@@ -188,6 +190,26 @@ const ongoingSupportConfig = {
 	// },
 	classNames: "blockTint",
 };
+// CTA Banner
+
+const ctaBannerConfig = {
+	heading: "Ready to get started?",
+	subheading:
+		"Let us build something great together. Book a free 30-minute consultation to see if this is right for your practice",
+	variant: "brand", // "brand" | "dark" | "light"
+	cta: {
+		text: "Book a consult",
+		href: "/contact",
+		variant: "primary",
+	},
+	secondaryCta: null,
+	// Optional second button example:
+	secondaryCta: {
+		text: "See how it works",
+		href: "/process",
+		variant: "secondary",
+	},
+};
 function ServicesPage() {
 	return (
 		<main id="main-content" className="process__page">
@@ -197,6 +219,7 @@ function ServicesPage() {
 			<AddonsGrid addonsConfig={addonsConfig} />
 			<TwoColumn twoColumnConfig={supportConfig} />
 			<OngoingSupport ongoingSupportConfig={ongoingSupportConfig} />
+			<CTABanner ctaBannerConfig={ctaBannerConfig} />
 		</main>
 	);
 }

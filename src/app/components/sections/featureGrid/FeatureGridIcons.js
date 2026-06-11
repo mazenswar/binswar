@@ -1,5 +1,45 @@
 // components/sections/FeatureGrid/FeatureGridIcons.js
 
+function IconSettings() {
+	return (
+		<svg
+			width="28"
+			height="28"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="1.6"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<circle cx="12" cy="12" r="3" />
+			<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+		</svg>
+	);
+}
+
+function IconShield() {
+	return (
+		<svg
+			width="28"
+			height="28"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="1.6"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.5C16.5 22.15 20 17.25 20 12V6l-8-4z" />
+			<path d="M9 12l2 2 4-4" />
+		</svg>
+	);
+}
+
 function IconDesign() {
 	return (
 		<svg
@@ -91,5 +131,7 @@ export function FeatureIcon({ name }) {
 	if (name === "search") return <IconSearch />;
 	if (name === "accessibility") return <IconAccessibility />;
 	if (name === "chart") return <IconChart />;
+	if (name === "settings") return <IconSettings />;
+	if (name === "shield") return <IconShield />;
 	return null;
 }

@@ -39,7 +39,13 @@ import StaggerGrid from "../../ui/staggerGrid/StaggerGrid";
 import "./steps.scss";
 
 export default function Steps({ stepsConfig }) {
-	const { heading, subheading, steps, classNames = "" } = stepsConfig;
+	const {
+		heading,
+		subheading,
+		steps,
+		classNames = "",
+		cta = true,
+	} = stepsConfig;
 
 	return (
 		<section
@@ -65,12 +71,14 @@ export default function Steps({ stepsConfig }) {
 						</div>
 					))}
 
-					<Button
-						className="steps__cta"
-						text="Read our full process"
-						href="/process"
-						variant="secondary"
-					/>
+					{cta ? (
+						<Button
+							className="steps__cta"
+							text="See our full process"
+							href="/process"
+							variant="secondary"
+						/>
+					) : null}
 				</StaggerGrid>
 			</div>
 		</section>

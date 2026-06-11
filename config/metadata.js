@@ -33,7 +33,7 @@ export function generateMeta({
 		title: pageTitle,
 		description: pageDescription,
 		metadataBase: new URL(site.url),
-
+		manifest: "/site.webmanifest",
 		alternates: {
 			canonical: pageUrl,
 		},

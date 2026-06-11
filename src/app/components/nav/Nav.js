@@ -19,7 +19,10 @@ const logo = {
 const links = [
 	{
 		label: "Services",
-		href: "/services",
+		items: [
+			{ label: "Audit", href: "/audit" },
+			{ label: "New Website", href: "/new-website" },
+		],
 	},
 	{ label: "About", href: "/about" },
 	{ label: "Process", href: "/process" },

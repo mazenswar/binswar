@@ -7,19 +7,24 @@ import BookingCTA from "./components/sections/bookingCTA/BookingCTA";
 import FeatureGrid from "./components/sections/featureGrid/FeatureGrid";
 import AudienceSection from "./components/sections/audienceSection/AudienceSection";
 import CTABanner from "./components/sections/ctaBanner/CTABanner";
+import AuditCTA from "./components/sections/auditCTA/AuditCTA";
 
 const heroConfig = {
 	variant: "background-hero",
 	eyebrow: "",
 	heading: "The meaningful digital presence your practice deserves",
 	subheading:
-		"We build custom websites for therapists and small practices, designed to reflect the quality of your work and built so the right clients can find you.",
+		"We help therapists and small practices build a digital presence that reflects the quality of their work and helps the right clients find them.",
 	cta: {
 		text: "Book a free consultation",
 		href: "/contact",
 		variant: "primary",
 	},
-	// ctaSecondary: { text: "Learn more", href: "/services", variant: "secondary" },
+	// ctaSecondary: {
+	// 	text: "Already have a website? Request an audit",
+	// 	href: "/services",
+	// 	variant: "secondary",
+	// },
 	images: {
 		background: {
 			src: "/hero/hero-a.jpg",
@@ -42,7 +47,7 @@ const featureGridConfig = {
 	classNames: "blockTint",
 	cta: {
 		text: "See our services",
-		href: "/services",
+		href: "/new-website",
 		variant: "secondary",
 	},
 	features: [
@@ -136,21 +141,48 @@ const stepsConfig = {
 			id: "step-4",
 			title: "We launch",
 			description:
-				"We connect your domain, confirm everything is live and working across desktop and mobile, set up your analytics, and submit your site to Google. We manage everything through your 90-day support period, then full ownership transfers to you.",
+				"We connect your domain, confirm everything is live and working across desktop and mobile, set up your analytics, and submit your site to Google.",
 		},
 		{
 			id: "step-5",
 			title: "We stay",
 			description:
-				"Your site goes live and we keep watching. For 90 days after launch we monitor your analytics, track how Google is indexing your site, and handle anything that needs attention. We will make sure your practice has the solid digital presence it deserves.",
+				"For 90 days after launch we monitor your analytics, track how Google is indexing your site, and handle anything that needs attention. We will make sure your practice has the solid digital presence it deserves.",
 		},
 	],
+};
+// audit
+
+const auditCtaConfig = {
+	id: "audit-cta",
+	eyebrow: "Already have a website?",
+	heading: "Find out why it is not working.",
+	body: "There is more to a digital presence than a beautiful design. The right technical foundation is what makes your practice visible in search, and what ensures your site meets the accessibility and HIPAA standards expected of healthcare providers.",
+	items: [
+		{ id: "a1", text: "Technical and indexing issues" },
+		{ id: "a2", text: "SEO and metadata gaps" },
+		{ id: "a3", text: "Accessibility and compliance flags" },
+		{ id: "a4", text: "Performance and mobile issues" },
+		{ id: "a5", text: "HIPAA risk assessment" },
+	],
+	card: {
+		label: "Website Audit",
+		price: "$100",
+		description: "A detailed report plus a 30-min walkthrough call.",
+		cta: {
+			text: "Learn more",
+			href: "/audit",
+			variant: "primary",
+			external: false,
+		},
+	},
+	classNames: "",
 };
 
 //  CTA Banner
 const ctaBannerConfig = {
 	heading: "Ready to get started?",
-	// classNames: "blockTint",
+	classNames: "blockTint",
 	subheading:
 		"The first step is a conversation. Everything else follows from there.",
 	variant: "brand",
@@ -170,6 +202,7 @@ export default function Home() {
 			<FeatureGrid featureGridConfig={featureGridConfig} />
 			<AudienceSection audienceConfig={audienceConfig} />
 			<Steps stepsConfig={stepsConfig} />
+			<AuditCTA auditCtaConfig={auditCtaConfig} />
 			<CTABanner ctaBannerConfig={ctaBannerConfig} />
 		</main>
 	);
