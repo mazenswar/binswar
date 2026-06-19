@@ -54,7 +54,7 @@
    -------------------------------------------- */
 .page-hero__eyebrow {
 	margin: 0;
-	color: var(--brand-1);
+	color: var(--brand-1-bright);
 }
 
 /* Media
@@ -66,7 +66,8 @@
 		display: block;
 		width: 100%;
 		height: auto;
-		border-radius: var(--radius-lg);
+		// border-radius: var(--radius-lg);
+		border-radius: 100%;
 	}
 }
 // SVG

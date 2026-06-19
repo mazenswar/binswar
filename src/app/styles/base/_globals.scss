@@ -82,8 +82,9 @@ a {
 	color: var(--color-text);
 
 	&:hover {
-		background: var(--brand-1);
-		color: var(--color-surface);
+		background: var(--brand-2);
+		color: var(--brand-5);
+		border: 2px solid var(--brand-2);
 	}
 
 	&:focus-visible {

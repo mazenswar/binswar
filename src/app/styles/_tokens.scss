@@ -1,44 +1,35 @@
 /* =========================
-  /styles/_tokens.scss
-  Single source of truth for brand tokens
-   ========================= */
-
-/* =========================
-  CLIENT THEME OVERRIDES
-  Change these per project:
-  --color-bg
-  --color-surface
-  --color-text
-  --brand-1 through --brand-5
-  --font-body
-  --font-heading
+   /styles/_tokens.scss
+   Single source of truth for brand tokens
+   Binswar LLC — deep-space, confident, modern
    ========================= */
 
 :root {
 	/* Colors */
-	--color-border: #e5e7eb;
-	--color-background-alt: #f9fafb;
-	--color-bg: #fff7f3;
-	--color-surface: #ffffff;
-	--color-text: #4d4d4d;
-	--color-muted: #6b7280;
-	--brand-1: #7f5a83;
-	--brand-2: #f9d8cd;
-	--brand-3: #4c2f6f;
-	--brand-4: #52489f;
-	--brand-5: #c266a7;
-	--accent-1: #174ea6;
+	--color-bg: #0e0e12;
+	--color-surface: #17171d;
+	--color-text: #f5f5f7;
+	--color-muted: #a8a8b3;
+	--color-border: #2a2a33;
+	--color-background-alt: #1c1c24;
+
+	--brand-1: #5b21b6; /* deep space violet — primary action, links, signature accent */
+	--brand-1-bright: #a78bfa;
+	--brand-2: #d6006e; /* magenta — rare spark, used sparingly for emphasis */
+	--brand-3: #1c1c24; /* surface tint — card and section backgrounds */
+	--brand-4: #2a2a33; /* border and divider color */
+	--brand-5: #ffffff; /* text on brand — white on violet/magenta fills */
+
+	--accent-1: #7c3aed; /* lighter violet — focus ring, links on dark, hover states */
 	--success: #0f9d58;
 	--warning: #fbbc05;
 	--danger: #d93025;
 
-	--gradient: linear-gradient(0deg, var(--brand-4) 0%, var(--brand-5) 100%);
+	--gradient: linear-gradient(135deg, var(--brand-1) 0%, var(--brand-2) 100%);
 
 	/* Typography */
-	--font-sans:
-		system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-	--font-body: var(--font-lexend);
-	--font-heading: var(--font-serif);
+	--font-body: var(--font-binswar-body);
+	--font-heading: var(--font-binswar-heading);
 
 	/* Font size scale */
 	--font-size-xs: 0.75rem; /* 12px */
@@ -67,15 +58,15 @@
 	/* Layout */
 	--max-width: 1200px;
 
-	/* Radii */
-	--radius-sm: 8px;
-	--radius-md: 12px;
-	--radius-lg: 16px;
-	--radius-xl: 24px;
+	/* Radii — sharp and geometric, consistent with sleek/modern direction */
+	--radius-sm: 4px;
+	--radius-md: 8px;
+	--radius-lg: 12px;
+	--radius-xl: 16px;
 
-	/* Shadows */
-	--shadow-1: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
-	--shadow-2: 0 4px 12px rgba(0, 0, 0, 0.12);
+	/* Shadows — deeper, since they sit on a dark background */
+	--shadow-1: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+	--shadow-2: 0 8px 24px rgba(0, 0, 0, 0.5);
 
 	/* Transitions */
 	--transition-fast: 0.15s ease;
@@ -96,13 +87,3 @@
 	--focus-offset: 2px;
 	--min-tap-target: 44px;
 }
-
-/* Dark mode hook if you need it later */
-// @media (prefers-color-scheme: dark) {
-// 	:root {
-// 		--color-bg: #0f0f10;
-// 		--color-surface: #161617;
-// 		--color-text: #e9eaec;
-// 		--color-muted: #a1a1aa;
-// 	}
-// }

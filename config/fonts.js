@@ -79,16 +79,30 @@ export const minimalHeading = Space_Grotesk({
 });
 
 // ── Binswar
+// variant A
+// export const binswarHeading = Space_Grotesk({
+// 	subsets: ["latin"],
+// 	variable: "--font-binswar-heading",
+// 	display: "swap",
+// 	weight: ["700"],
+// });
+// export const binswarBody = Plus_Jakarta_Sans({
+// 	subsets: ["latin"],
+// 	variable: "--font-binswar-body",
+// 	display: "swap",
+// 	weight: ["300", "400", "500", "600"],
+// });
 
-export const binswarHeading = DM_Serif_Display({
+// VARIANT B
+export const binswarHeading = Space_Grotesk({
 	subsets: ["latin"],
 	variable: "--font-binswar-heading",
 	display: "swap",
-	weight: ["400"],
+	weight: ["700"],
 });
-export const binswarBody = Plus_Jakarta_Sans({
+export const binswarBody = Inter({
 	subsets: ["latin"],
 	variable: "--font-binswar-body",
 	display: "swap",
-	weight: ["300", "400", "500", "600"],
+	weight: ["700", "800"],
 });

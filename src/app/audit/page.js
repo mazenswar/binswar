@@ -99,6 +99,7 @@ const auditStepsConfig = {
 // pricing card
 const auditPricingConfig = {
 	id: "audit-pricing",
+	classNames: "blockTint",
 	eyebrow: "Pricing",
 	heading: "One flat fee. No surprises.",
 	subheading: null,
@@ -123,12 +124,12 @@ const auditPricingConfig = {
 			],
 		},
 	],
-	cta: {
-		text: "Book a free consultation",
-		href: "https://calendly.com/binswar",
-		variant: "primary",
-		external: true,
-	},
+	// cta: {
+	// 	text: "Book a free consultation",
+	// 	href: "https://calendly.com/binswar",
+	// 	variant: "primary",
+	// 	external: true,
+	// },
 };
 // cta banner
 const ctaBannerConfig = {

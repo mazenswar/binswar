@@ -62,7 +62,7 @@ const featureGridConfig = {
 			id: "search",
 			title: "Built to Be Found",
 			description:
-				"We build every site with search engine optimization from the ground up, relevant keywords, clean code, proper metadata, and Google Search Console setup so your practice shows up in the right searches.",
+				"We build every site with search engine optimization, relevant keywords, clean code, proper metadata, and Google Search Console setup so your practice shows up in the right searches.",
 			icon: "search",
 		},
 		{
@@ -189,7 +189,7 @@ const ctaBannerConfig = {
 	cta: {
 		text: "Book a free consultation",
 		href: "https://calendly.com/mazen-binswar/30min",
-		variant: "secondary",
+		variant: "primary",
 		external: true,
 	},
 	secondaryCta: null,

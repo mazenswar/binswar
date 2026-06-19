@@ -17,10 +17,11 @@ import {
 	binswarBody,
 } from "../../config/fonts";
 import site from "../../config/site";
-import Nav from "./components/nav/Nav";
-import Footer from "./components/footer/Footer";
+
 import "./styles/index.scss";
-import DesignPanel from "./components/ui/designPanel/DesignPanel";
+
+import NavbarPulse from "./components/navbarpulse/NavbarPulse";
+import FooterPulse from "./components/footerPulse/FooterPulse";
 
 // Root metadata — applies to all pages unless overridden
 export const metadata = generateMeta({
@@ -48,7 +49,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html
 			lang="en"
-			data-theme="slate-mauve"
+			// data-theme="slate-mauve"
 			data-font="binswar"
 			data-style="background-hero"
 			data-shape="round"
@@ -66,12 +67,11 @@ export default function RootLayout({ children }) {
 				<a href="#main-content" className="skip-nav">
 					Skip to main content
 				</a>
-				{/* <DesignPanel /> */}
-				<Nav />
 
+				<NavbarPulse />
 				{children}
 
-				<Footer />
+				<FooterPulse />
 			</body>
 			{/* Analytics — only renders if IDs are set */}
 			{site.analytics?.ga4 && <GoogleAnalytics gaId={site.analytics.ga4} />}
