@@ -29,7 +29,6 @@ const navConfig = {
 				{ id: "audit", label: "Audit", href: "/audit" },
 			],
 		},
-		{ id: "process", label: "Process", href: "/process" },
 		{
 			id: "case-studies",
 			label: "Case Studies",
@@ -42,6 +41,7 @@ const navConfig = {
 			],
 		},
 		{ id: "about", label: "About", href: "/about" },
+		{ id: "blog", label: "Blog", href: "/blog" },
 	],
 	cta: { text: "Let's talk", href: "/contact", variant: "primary" },
 };

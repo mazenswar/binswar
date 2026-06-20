@@ -14,7 +14,6 @@ const footerConfig = {
 	navLinks: [
 		{ label: "Home", href: "/" },
 		{ label: "Services", href: "/services" },
-		{ label: "Process", href: "/process" },
 		{ label: "Case Studies", href: "/case-studies" },
 		{ label: "About", href: "/about" },
 	],
