@@ -2,6 +2,7 @@ import { generateMeta } from "../../../config/metadata";
 import PageHero from "../components/sections/pageHero/PageHero";
 import BookingCTA from "../components/sections/bookingCTA/BookingCTA";
 import ContactForm from "../components/sections/contactForm/ContactForm";
+import ContactUs from "../components/illustrations/ContactUs";
 
 const pageHeroConfig = {
 	eyebrow: "Contact",
@@ -9,6 +10,7 @@ const pageHeroConfig = {
 	subheading:
 		"Book a free consultation, or send a quick message if you'd rather start there. Either way, I'll get back to you within one business day.",
 	align: "left",
+	illustration: <ContactUs />,
 };
 
 const bookingConfig = {

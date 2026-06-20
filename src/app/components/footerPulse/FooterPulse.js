@@ -14,8 +14,8 @@ const footerConfig = {
 	navLinks: [
 		{ label: "Home", href: "/" },
 		{ label: "Services", href: "/services" },
-		{ label: "Case Studies", href: "/case-studies" },
 		{ label: "About", href: "/about" },
+		{ label: "Blog", href: "/blog" },
 	],
 	cta: { text: "Let's talk", href: "/contact" },
 	copyrightName: "Binswar LLC",

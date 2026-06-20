@@ -3,6 +3,15 @@ import PageHero from "../components/sections/pageHero/PageHero";
 import ProseSection from "../components/sections/proseSection/ProseSection";
 import CTABanner from "../components/sections/ctaBanner/CTABanner";
 
+import { generateMeta } from "../../../config/metadata";
+
+export const metadata = generateMeta({
+	title: "About",
+	description:
+		"Mazen Alswar, founder of Binswar, builds digital presence for therapists who deserve to be found — drawing on experience launching CALM Therapy from the ground up.",
+	path: "/about",
+});
+
 const aboutHeroConfig = {
 	eyebrow: "About Binswar",
 	heading: "Mazen Alswar",

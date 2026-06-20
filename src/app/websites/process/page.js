@@ -1,10 +1,17 @@
 import React from "react";
 import PageHero from "../../components/sections/pageHero/PageHero";
 import ProcessTimeline from "../../components/sections/processTimeline/ProcessTimeline";
-import GeometricNetwork from "../../components/illustrations/GeometricNetwork";
 import CTABanner from "../../components/sections/ctaBanner/CTABanner";
 import ProcessRoute from "../../components/illustrations/ProcessRoute";
 
+import { generateMeta } from "../../../../config/metadata";
+
+export const metadata = generateMeta({
+	title: "Our Process",
+	description:
+		"A clear four-phase process from first call to launch, so you always know what's happening and what we need from you.",
+	path: "/services/websites/process",
+});
 const processHeroConfig = {
 	eyebrow: "How we work",
 	heading: "A clear path from first call to launch.",

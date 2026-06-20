@@ -9,6 +9,15 @@ import AudienceSection from "./components/sections/audienceSection/AudienceSecti
 import CTABanner from "./components/sections/ctaBanner/CTABanner";
 import AuditCTA from "./components/sections/auditCTA/AuditCTA";
 
+import { generateMeta } from "../../config/metadata";
+
+export const metadata = generateMeta({
+	title: "Custom Websites for Therapists & Private Practices",
+	description:
+		"We help therapists and small practices build a digital presence that reflects the quality of their work, with custom design, SEO, accessibility, and HIPAA-aware support.",
+	path: "/",
+});
+
 const heroConfig = {
 	variant: "background-hero",
 	eyebrow: "",

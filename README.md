@@ -13,3 +13,4 @@ https://fonts.google.com/specimen/Megrim?preview.text=binswar&specimen.preview.t
 /blog
 /blog/[slug]
 /case-studies/calm-therapy
+/contact

@@ -8,6 +8,15 @@ import OngoingSupport from "../components/sections/ongoingSupport/OngoingSupport
 import GeometricNetwork from "../components/illustrations/GeometricNetwork";
 import CTABanner from "../components/sections/ctaBanner/CTABanner";
 
+import { generateMeta } from "../../../config/metadata";
+
+export const metadata = generateMeta({
+	title: "Website Packages",
+	description:
+		"One-page and multi-page website packages for therapists, starting at $2,500 flat fee. Includes SEO, analytics setup, and 90 days of post-launch support.",
+	path: "/services/websites",
+});
+
 const servicesHeroConfig = {
 	eyebrow: null, // optional label above heading e.g. "Our Services"
 	heading: "Custom Websites for Therapists and Small Practices",

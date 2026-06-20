@@ -5,6 +5,7 @@ import PageHero from "../components/sections/pageHero/PageHero";
 import StaggerGrid from "../components/ui/staggerGrid/StaggerGrid";
 import { generateMeta } from "../../../config/metadata";
 import "./blog.scss";
+import Write from "../components/illustrations/Write";
 
 export const metadata = generateMeta({
 	title: "Blog",
@@ -20,6 +21,7 @@ const pageHeroConfig = {
 	subheading:
 		"Notes on websites, SEO, and HIPAA-aware design for therapists and private practices.",
 	align: "left",
+	illustration: <Write />,
 };
 
 export default async function BlogIndexPage() {

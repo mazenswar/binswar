@@ -3,6 +3,15 @@ import PageHero from "../components/sections/pageHero/PageHero";
 import CardGrid from "../components/sections/cardGrid/CardGrid";
 import CloudNetwork from "../components/illustrations/CloudNetwork";
 
+import { generateMeta } from "../../../config/metadata";
+
+export const metadata = generateMeta({
+	title: "Services",
+	description:
+		"Custom website packages and audits for therapists and small practices, including SEO, accessibility, and HIPAA-aware design.",
+	path: "/services",
+});
+
 const pageHeroConfig = {
 	eyebrow: "Services",
 	heading: "Two ways to work together.",
