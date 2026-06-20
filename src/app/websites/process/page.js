@@ -1,9 +1,9 @@
 import React from "react";
-import PageHero from "../components/sections/pageHero/PageHero";
-import ProcessTimeline from "../components/sections/processTimeline/ProcessTimeline";
-import GeometricNetwork from "../components/illustrations/GeometricNetwork";
-import CTABanner from "../components/sections/ctaBanner/CTABanner";
-import ProcessRoute from "../components/illustrations/ProcessRoute";
+import PageHero from "../../components/sections/pageHero/PageHero";
+import ProcessTimeline from "../../components/sections/processTimeline/ProcessTimeline";
+import GeometricNetwork from "../../components/illustrations/GeometricNetwork";
+import CTABanner from "../../components/sections/ctaBanner/CTABanner";
+import ProcessRoute from "../../components/illustrations/ProcessRoute";
 
 const processHeroConfig = {
 	eyebrow: "How we work",

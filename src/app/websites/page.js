@@ -206,7 +206,7 @@ const ctaBannerConfig = {
 	// Optional second button example:
 	secondaryCta: {
 		text: "See how it works",
-		href: "/process",
+		href: "/websites/process",
 		variant: "secondary",
 	},
 };

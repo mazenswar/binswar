@@ -86,7 +86,7 @@ const auditStepsConfig = {
 			id: "step-2",
 			title: "Pay and share access",
 			description:
-				"Pay the $100 invoice and add us to your Google Search Console. We begin the audit once both are confirmed.",
+				"Pay the $50 invoice and add us to your Google Search Console. We begin the audit once both are confirmed.",
 		},
 		{
 			id: "step-3",
@@ -110,7 +110,7 @@ const auditPricingConfig = {
 			name: "Website Audit",
 			description:
 				"A comprehensive review of your existing site with a detailed report and a 30-minute walkthrough call.",
-			price: "$100",
+			price: "$50",
 			paymentStructure: "One-time flat fee",
 			delivery: "Report delivered within 5 business days of intake call",
 			inclusions: [

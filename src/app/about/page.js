@@ -10,7 +10,7 @@ const aboutHeroConfig = {
 		"Founder, Binswar — building digital presence for therapists who deserve to be found.",
 	align: "left",
 	image: {
-		src: "/hero/variant-abd.jpg",
+		src: "/images/about/mazen-a.webp",
 		alt: "Mazen Alswar",
 		width: 400,
 		height: 400,

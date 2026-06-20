@@ -167,7 +167,7 @@ const auditCtaConfig = {
 	],
 	card: {
 		label: "Website Audit",
-		price: "$100",
+		price: "$50",
 		description: "A detailed report plus a 30-min walkthrough call.",
 		cta: {
 			text: "Learn more",
