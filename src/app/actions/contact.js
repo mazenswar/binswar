@@ -30,7 +30,7 @@ export async function submitContactForm(formData) {
 				Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
 			},
 			body: JSON.stringify({
-				from: "Contact Form <noreply@binswar.com>",
+				from: "Binswar Contact Form <noreply@binswar.com>",
 				to: "mazen@binswar.com",
 				reply_to: email,
 				subject: `New inquiry from ${name}`,

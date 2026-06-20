@@ -19,21 +19,22 @@ import "./contactform.scss";
 // Get a free API key at resend.com. No credit card needed for the free tier.
 
 const formConfig = {
-	heading: "Get in touch",
+	heading: "Or send a message",
 	subheading:
-		"Have a question or ready to start a project? Send us a message and we will get back to you within one business day.",
+		"Have a question first, or not ready to book? Tell me a bit about what you're looking for and we will reply within three business days.",
 	fields: {
 		name: { label: "Your name", placeholder: "Jane Smith" },
 		email: { label: "Email address", placeholder: "jane@yourpractice.com" },
 		message: {
 			label: "Message",
-			placeholder: "Tell us a little about what you are looking for.",
+			placeholder:
+				"Tell me a little about your practice and what you're looking for or any questions you may have",
 		},
 	},
 	submitText: "Send message",
 	successHeading: "Message received",
 	successMessage:
-		"Thank you for reaching out. We will be in touch within one business day.",
+		"Thanks for reaching out. We will be in touch within three business days.",
 };
 
 /* =========================
@@ -107,11 +108,25 @@ export default function ContactForm() {
 						{status === "success" ? (
 							<div className="contact-form__success" role="alert">
 								<div className="contact-form__success-icon" aria-hidden="true">
-									✓
+									<svg
+										viewBox="0 0 24 24"
+										width="24"
+										height="24"
+										fill="none"
+										stroke="currentColor"
+										strokeWidth="3"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									>
+										<path d="M20 6L9 17L4 12" />
+									</svg>
 								</div>
 								<h3>{formConfig.successHeading}</h3>
 								<p>{formConfig.successMessage}</p>
-								<button className="btnGhost" onClick={() => setStatus("idle")}>
+								<button
+									className="btnSecondary"
+									onClick={() => setStatus("idle")}
+								>
 									Send another message
 								</button>
 							</div>

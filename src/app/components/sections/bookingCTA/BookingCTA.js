@@ -38,10 +38,20 @@ import "./bookingcta.scss";
 // };
 
 export default function BookingCTA({ bookingConfig }) {
-	const { heading, subheading, steps, cta, note } = bookingConfig;
+	const {
+		heading,
+		subheading,
+		steps,
+		cta,
+		note,
+		classNames = "",
+	} = bookingConfig;
 
 	return (
-		<section className="block booking-cta" aria-labelledby="booking-heading">
+		<section
+			className={`block booking-cta ${classNames}`.trim()}
+			aria-labelledby="booking-heading"
+		>
 			<div className="block__content container">
 				<div className="booking-cta__layout">
 					{/* Left: heading, subheading, steps */}

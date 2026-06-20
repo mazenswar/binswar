@@ -11,7 +11,6 @@ const site = {
 	url: "https://binswar.com",
 	locale: "en_US",
 	// Theme
-	theme: "slate-mauve", // "warm" | "clean" | "bold" | "earth" | "minimal"
 	// Analytics
 	analytics: {
 		ga4: "G-XXXXXXXXXX", // or null to disable
@@ -30,7 +29,7 @@ const site = {
 
 	// Branding
 	logo: {
-		src: "/logo.png", // place in /public
+		src: "/logo/binswar-white-b.png", // place in /public
 		width: 200,
 		height: 60,
 		alt: "Binswar logo",
