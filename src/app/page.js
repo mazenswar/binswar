@@ -56,7 +56,7 @@ const featureGridConfig = {
 	classNames: "blockTint",
 	cta: {
 		text: "See our services",
-		href: "/new-website",
+		href: "/websites",
 		variant: "secondary",
 	},
 	features: [
