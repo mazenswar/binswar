@@ -10,7 +10,7 @@ export const metadata = generateMeta({
 	title: "Our Process",
 	description:
 		"A clear four-phase process from first call to launch, so you always know what's happening and what we need from you.",
-	path: "/services/websites/process",
+	path: "/websites/process",
 });
 const processHeroConfig = {
 	eyebrow: "How we work",

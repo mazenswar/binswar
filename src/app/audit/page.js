@@ -11,7 +11,7 @@ export const metadata = generateMeta({
 	title: "Website Audit",
 	description:
 		"A $50 audit covering technical SEO, accessibility, performance, and HIPAA risk on your existing site. Delivered as a clear report with a 30-minute walkthrough call.",
-	path: "/services/audit",
+	path: "/audit",
 });
 
 const auditHeroConfig = {

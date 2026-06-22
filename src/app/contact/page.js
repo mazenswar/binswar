@@ -4,6 +4,13 @@ import BookingCTA from "../components/sections/bookingCTA/BookingCTA";
 import ContactForm from "../components/sections/contactForm/ContactForm";
 import ContactUs from "../components/illustrations/ContactUs";
 
+export const metadata = generateMeta({
+	title: "Contact — Binswar",
+	description:
+		"Book a free consultation or send a message. We'll get back to you as soon as we can.",
+	path: "/contact",
+});
+
 const pageHeroConfig = {
 	eyebrow: "Contact",
 	heading: "Let's talk about your site.",
@@ -35,13 +42,6 @@ const bookingConfig = {
 	},
 	note: "Prefer to write instead? Send a message below.",
 };
-
-export const metadata = generateMeta({
-	title: "Contact — Binswar",
-	description:
-		"Book a free consultation or send a message. We'll get back to you as soon as we can.",
-	path: "/contact",
-});
 
 export default function ContactPage() {
 	return (

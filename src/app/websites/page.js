@@ -14,7 +14,7 @@ export const metadata = generateMeta({
 	title: "Website Packages",
 	description:
 		"One-page and multi-page website packages for therapists, starting at $2,500 flat fee. Includes SEO, analytics setup, and 90 days of post-launch support.",
-	path: "/services/websites",
+	path: "/websites",
 });
 
 const servicesHeroConfig = {
