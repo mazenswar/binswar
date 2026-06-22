@@ -66,8 +66,8 @@
 		display: block;
 		width: 100%;
 		height: auto;
-		// border-radius: var(--radius-lg);
 		border-radius: 100%;
+		aspect-ratio: 1 / 1; // reserves square space before load
 	}
 }
 // SVG

@@ -20,6 +20,7 @@ import "./prosesection.scss";
 
 export default function ProseSection({ proseSectionConfig }) {
 	const {
+		id = "heading",
 		heading,
 		paragraphs,
 		align = "left",
@@ -30,12 +31,12 @@ export default function ProseSection({ proseSectionConfig }) {
 	return (
 		<section
 			className={`block prose-section ${centered ? "prose-section--centered" : ""} ${classNames}`.trim()}
-			aria-labelledby={heading ? "prose-section-heading" : undefined}
+			aria-labelledby={id ? `prose-section-${id}` : undefined}
 		>
 			<div className="container">
 				<div className="prose">
 					{heading && (
-						<h2 id="prose-section-heading" className="prose-section__heading">
+						<h2 id={`prose-section-${id}`} className="prose-section__heading">
 							{heading}
 						</h2>
 					)}

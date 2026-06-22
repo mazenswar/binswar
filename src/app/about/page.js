@@ -26,6 +26,7 @@ const aboutHeroConfig = {
 	},
 };
 const storyConfig = {
+	id: "story",
 	heading:
 		"I've watched up close what it takes to have a meaningful online presence.",
 	paragraphs: [
@@ -37,6 +38,7 @@ const storyConfig = {
 };
 
 const backgroundConfig = {
+	id: "background",
 	heading: "Background",
 	paragraphs: [
 		"Before any of this, I spent years in communications and diplomacy, including representing Bahrain at the United Nations, where I helped draft official statements on issues including Palestine. In my last two years there, I built and led a training curriculum for incoming diplomats, lectures, debate groups, graded assignments, teaching political philosophy and critical thinking to people just starting their careers. I later spent a year doing the same kind of work in a different field, teaching software engineering to career-changers at a coding bootcamp.",
