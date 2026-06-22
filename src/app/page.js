@@ -36,7 +36,7 @@ const heroConfig = {
 	// },
 	images: {
 		background: {
-			src: "/hero/hero-a.jpg",
+			src: "/hero/city.webp",
 			alt: "Mazen Alswar, Binswar Founder",
 		},
 	},
