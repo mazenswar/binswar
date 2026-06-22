@@ -94,6 +94,7 @@ export default function BookingCTA({ bookingConfig }) {
 								variant={cta.variant ?? "primary"}
 								external={cta.external ?? true}
 								trackEvent={cta.trackEvent}
+								className={cta.classNames}
 							/>
 							{note && <p className="booking-cta__note">{note}</p>}
 						</div>

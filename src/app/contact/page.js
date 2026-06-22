@@ -30,6 +30,7 @@ const bookingConfig = {
 		text: "Book a free consultation",
 		href: "https://calendly.com/mazen-binswar/30min",
 		variant: "primary",
+		classNames: "booking_cta_track",
 		external: true,
 	},
 	note: "Prefer to write instead? Send a message below.",
