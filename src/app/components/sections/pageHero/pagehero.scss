@@ -61,13 +61,17 @@
    -------------------------------------------- */
 .page-hero__media {
 	margin: 0;
+	width: 100%;
+	aspect-ratio: 1 / 1; // <-- move this here from img
+	max-width: 400px; // prevents oversize on mobile
 
 	img {
 		display: block;
 		width: 100%;
 		height: auto;
 		border-radius: 100%;
-		aspect-ratio: 1 / 1; // reserves square space before load
+		aspect-ratio: 1 / 1; // keep here too for safety
+		object-fit: cover;
 	}
 }
 // SVG

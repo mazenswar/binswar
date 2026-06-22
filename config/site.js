@@ -13,8 +13,8 @@ const site = {
 	// Theme
 	// Analytics
 	analytics: {
-		ga4: "G-XXXXXXXXXX", // or null to disable
-		gtm: null, // "GTM-XXXXXXX" or null
+		ga4: null, // or null to disable
+		gtm: "GTM-KFSD2RLN", // "GTM-XXXXXXX" or null
 	},
 	// Contact
 	email: "mazen@binswar.com",
@@ -40,8 +40,8 @@ const site = {
 		width: 1200,
 		height: 630,
 		// Brand colors used in dynamic OG image
-		background: "#1a1a2e", // dark brand color
-		accent: "#7f5a83", // brand-1
+		background: "#1c1c24", // dark brand color
+		accent: "#5b21b6", // brand-1
 		text: "#ffffff",
 	},
 
@@ -65,7 +65,7 @@ const site = {
 
 	// Price range for JSON-LD (optional)
 	// "$" | "$$" | "$$$" | "$$$$"
-	priceRange: "$$",
+	// priceRange: "$$",
 };
 
 export default site;

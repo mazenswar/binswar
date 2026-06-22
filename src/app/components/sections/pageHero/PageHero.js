@@ -61,7 +61,7 @@ export default function PageHero({ pageHeroConfig }) {
 								width={pageHeroConfig.image.width}
 								height={pageHeroConfig.image.height}
 								priority
-								sizes="(max-width: 768px) 90vw, 420px"
+								sizes="(max-width: 768px) min(90vw, 400px), 420px"
 							/>
 						</figure>
 					)}
