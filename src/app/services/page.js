@@ -30,14 +30,14 @@ const cardGridConfig = {
 			title: "New Website",
 			description:
 				"A fully custom website built from the ground up, designed and optimized specifically for your practice. Accessible, fast, and built to bring the right clients to you.",
-			href: "/websites",
+			href: "/services/websites",
 			cta: "See what's included",
 		},
 		{
 			title: "Website Audit",
 			description:
 				"Already have a site but not sure why it isn't working? We'll review your design, performance, SEO, and accessibility, and tell you exactly what's holding you back.",
-			href: "/audit",
+			href: "/services/audit",
 			cta: "Get an audit",
 		},
 	],
