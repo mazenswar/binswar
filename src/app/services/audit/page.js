@@ -43,35 +43,35 @@ const auditCoverageConfig = {
 			id: "technical",
 			title: "Technical Foundation",
 			description:
-				"Indexing status, HTTPS configuration, sitemap submission, crawl errors, and redirect chains. The infrastructure search engines need to find and read your site.",
+				"A strong technical foundation helps search engines find, understand, and display your website in results. We review indexing status, HTTPS configuration, sitemap submission, crawl errors, and redirect chains to identify anything that may be limiting your visibility.",
 			icon: "settings",
 		},
 		{
 			id: "seo",
 			title: "On-Page SEO",
 			description:
-				"Page titles, meta descriptions, heading structure, image alt text, keyword relevance, and internal linking. Everything that tells search engines what your practice offers and where you are.",
+				"Search engines need clear signals about who you help, what services you offer, and where you practice. We review page titles, meta descriptions, heading structure, image alt text, keyword relevance, and internal linking to make sure your site communicates that information effectively.",
 			icon: "search",
 		},
 		{
 			id: "accessibility",
 			title: "Accessibility",
 			description:
-				"Color contrast, keyboard navigation, form labels, focus states, and screen reader compatibility checked against WCAG 2.1 AA — the standard expected of healthcare providers.",
+				"Not everyone experiences the web the same way. We evaluate your site against WCAG 2.1 AA standards, including color contrast, keyboard navigation, form labels, focus states, and screen reader compatibility, to make sure it works for all visitors.",
 			icon: "accessibility",
 		},
 		{
 			id: "performance",
 			title: "Performance",
 			description:
-				"Lighthouse scores, Core Web Vitals, image optimization, and mobile responsiveness across iOS Safari and Android Chrome.",
+				"Visitors expect pages to load quickly and work reliably across devices. We review Lighthouse scores, Core Web Vitals, image optimization, and mobile responsiveness across iOS Safari and Android Chrome to identify opportunities for improvement.",
 			icon: "chart",
 		},
 		{
 			id: "hipaa",
 			title: "HIPAA Risk Assessment",
 			description:
-				"Contact form scope, booking flow review, and platform compliance check. Flags any areas where your site may be collecting or inviting protected health information without appropriate safeguards.",
+				"Many therapists are unaware of the privacy risks that can exist on a website. We review contact forms, booking workflows, and platform configurations to identify areas where protected health information may be collected or transmitted without appropriate safeguards.",
 			icon: "shield",
 		},
 	],

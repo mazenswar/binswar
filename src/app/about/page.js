@@ -30,9 +30,11 @@ const storyConfig = {
 	heading:
 		"I've watched up close what it takes to have a meaningful online presence.",
 	paragraphs: [
-		"My wife opened her own private practice a couple of years ago. She's a brilliant clinician. I figured I'd handle the website and the business side, and that would be that. I'd built plenty of websites before, just never one that actually had to work, with real people deciding whether to trust it enough to book a first session.",
-		"That part humbled me fast. A website isn't really about how it looks. It's about whether people find it, whether they stay, whether they understand what you do and feel safe enough to reach out. Performance, accessibility, search visibility, the actual language and imagery that build trust with a stranger, none of it was something I understood until we needed it, one problem at a time.",
-		"That practice, CALM Therapy, now shows up in search and brings in real clients, starting from nothing. Everything I learned building it is what I bring to this work now.",
+		"When my wife opened her private practice, I was happy to help with the website. I had built websites before, and I assumed I understood what the work involved.",
+		"What I didn't expect was how different a therapist's website is from almost every other kind of website. It isn't just a business website. It has to help someone take a risk. It has to help a stranger decide whether they feel safe enough to share the most difficult parts of their life with another person. Every detail matters: the words, the structure, the imagery, the accessibility, the way someone finds the site in the first place.",
+		"Over time, I watched CALM Therapy grow into something that consistently connected the right people with the right therapist. It wasn't just generating traffic. It was helping people find support. That experience shaped the direction of Binswar.",
+		"It also gave me a clearer view of something I hadn't fully appreciated before. Therapists spend years learning how to help people, yet most are left to figure out marketing, search visibility, and digital presence entirely on their own. Graduate school teaches clinical skills. It doesn't usually teach how to build a sustainable practice in an increasingly competitive online landscape.",
+		"My goal is to help therapists build an online presence that reflects the quality of their work, helps the right clients find them, and supports the long-term growth of their practice. I see my role as a partner in a part of private practice that most clinicians were never formally taught but are nevertheless expected to navigate.",
 	],
 	align: "left",
 };
@@ -41,8 +43,8 @@ const backgroundConfig = {
 	id: "background",
 	heading: "Background",
 	paragraphs: [
-		"Before any of this, I spent years in communications and diplomacy, including representing Bahrain at the United Nations, where I helped draft official statements on issues including Palestine. In my last two years there, I built and led a training curriculum for incoming diplomats, lectures, debate groups, graded assignments, teaching political philosophy and critical thinking to people just starting their careers. I later spent a year doing the same kind of work in a different field, teaching software engineering to career-changers at a coding bootcamp.",
-		"Different rooms, same instinct: take something complicated and make it usable by someone who's never had to think about it before.",
+		"Before any of this, I spent years in communications and diplomacy, including representing Bahrain at the United Nations, where I drafted and delivered official statements in the UN Human Rights Council and the UN General Assembly. In my last two years as a diplomat, I built and led a training curriculum for incoming diplomats, lectures, debate groups, graded assignments, teaching political philosophy and critical thinking to people just starting their careers. I later spent a year doing the same kind of work in a different field, teaching software engineering to career-changers at a coding bootcamp.",
+		"Different rooms, same instinct: contributing to something meaningful, helping people develop skills and confidence, and supporting work that extends beyond any one individual. What has always been most rewarding is empowering people who go on to make an impact in their own communities. That commitment continues to guide the work I do today.",
 	],
 	align: "left",
 };
