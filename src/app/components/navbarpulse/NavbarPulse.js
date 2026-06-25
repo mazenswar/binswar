@@ -24,10 +24,11 @@ const navConfig = {
 		{
 			id: "services",
 			label: "Services",
-			items: [
-				{ id: "websites", label: "Websites", href: "/websites" },
-				{ id: "audit", label: "Audit", href: "/audit" },
-			],
+			href: "/services",
+			// items: [
+			// 	{ id: "websites", label: "Websites", href: "/websites" },
+			// 	{ id: "audit", label: "Audit", href: "/audit" },
+			// ],
 		},
 		{
 			id: "case-studies",
@@ -80,7 +81,6 @@ export default function NavbarPulse() {
 		return false;
 	}
 
-	// Tracker line only ever measures top-level items.
 	function updateLinePosition(targetId) {
 		if (!navListRef.current) return;
 
@@ -137,7 +137,6 @@ export default function NavbarPulse() {
 		closeTimerRef.current = setTimeout(() => setActiveDropdown(null), 150);
 	}
 
-	// Desktop only — hover opens/moves the dropdown and the tracker line.
 	function handleTopHover(item) {
 		if (!isDesktop()) return;
 
@@ -156,7 +155,6 @@ export default function NavbarPulse() {
 		updateLinePosition(null);
 	}
 
-	// Mobile only — tap toggles the accordion open/closed.
 	function handleToplinkClick(item) {
 		if (isDesktop()) return;
 		if (!item.items) return;
@@ -175,6 +173,12 @@ export default function NavbarPulse() {
 					href={navConfig.brand.href}
 					className="pulse-brand"
 					aria-label={`${navConfig.brand.label} home`}
+					onClick={(e) => {
+						if (pathname === navConfig.brand.href) {
+							e.preventDefault();
+							window.scrollTo({ top: 0, behavior: "smooth" });
+						}
+					}}
 				>
 					{navConfig.brand.logoSrc ? (
 						<Image
@@ -183,7 +187,7 @@ export default function NavbarPulse() {
 							width={navConfig.brand.logoWidth}
 							height={navConfig.brand.logoHeight}
 							priority
-							style={{ objectFit: "contain" }}
+							style={{ objectFit: "contain", height: "auto" }}
 						/>
 					) : (
 						<span className="brand-text-fallback">{navConfig.brand.label}</span>
@@ -279,7 +283,13 @@ export default function NavbarPulse() {
 												data-nav-id={item.id}
 												className={`pulse-link ${active ? "is-active" : ""}`}
 												aria-current={active ? "page" : undefined}
-												onClick={closeAllMenus}
+												onClick={(e) => {
+													if (pathname === item.href) {
+														e.preventDefault();
+														window.scrollTo({ top: 0, behavior: "smooth" });
+													}
+													closeAllMenus();
+												}}
 											>
 												{item.label}
 											</Link>

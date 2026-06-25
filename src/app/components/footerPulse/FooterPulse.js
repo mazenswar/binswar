@@ -1,5 +1,7 @@
-// components/footer/FooterPulse.js
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import "./footerpulse.scss";
 
 /* =========================
@@ -9,7 +11,7 @@ import "./footerpulse.scss";
 const footerConfig = {
 	brand: {
 		label: "Binswar",
-		tagline: "Web design for therapists who want more than a template.",
+		tagline: "Web design for a meaningful web presence",
 	},
 	navLinks: [
 		{ label: "Home", href: "/" },
@@ -26,6 +28,7 @@ const footerConfig = {
    ========================= */
 
 export default function FooterPulse() {
+	const pathname = usePathname();
 	const year = new Date().getFullYear();
 
 	return (
@@ -47,7 +50,16 @@ export default function FooterPulse() {
 						<ul className="pulse-footer__nav-list" role="list">
 							{footerConfig.navLinks.map((link) => (
 								<li key={link.href}>
-									<Link href={link.href} className="pulse-footer__link">
+									<Link
+										href={link.href}
+										className="pulse-footer__link"
+										onClick={(e) => {
+											if (pathname === link.href) {
+												e.preventDefault();
+												window.scrollTo({ top: 0, behavior: "smooth" });
+											}
+										}}
+									>
 										{link.label}
 									</Link>
 								</li>

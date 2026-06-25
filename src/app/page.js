@@ -14,16 +14,16 @@ import { generateMeta } from "../../config/metadata";
 export const metadata = generateMeta({
 	title: "Custom Websites for Therapists & Private Practices",
 	description:
-		"We help therapists and small practices build a digital presence that reflects the quality of their work, with custom design, SEO, accessibility, and HIPAA-aware support.",
+		"We help therapists and small practices build a web presence that reflects the quality of their work, with custom design, SEO, accessibility, and HIPAA-aware support.",
 	path: "/",
 });
 
 const heroConfig = {
 	variant: "background-hero",
 	eyebrow: "",
-	heading: "The meaningful digital presence your practice deserves",
+	heading: "The meaningful web presence your practice deserves",
 	subheading:
-		"We help therapists and small practices build a digital presence that reflects the quality of their work and helps the right clients find them.",
+		"We help therapists and small practices build a web presence that reflects the quality of their work and helps the right clients find them.",
 	cta: {
 		text: "Book a free consultation",
 		href: "/contact",
@@ -56,7 +56,7 @@ const featureGridConfig = {
 	classNames: "blockTint",
 	cta: {
 		text: "See our services",
-		href: "/websites",
+		href: "/services/websites",
 		variant: "secondary",
 	},
 	features: [
@@ -64,28 +64,28 @@ const featureGridConfig = {
 			id: "design",
 			title: "Custom Design",
 			description:
-				"We build every site around your practice, your voice, your values, and your people. Every detail is fully customizable to reflect exactly who you are and what you offer.",
+				"No templates, no shortcuts. We build every site around your practice, your voice, and the clients you want to reach, so your online presence feels like you from the first visit.",
 			icon: "design",
 		},
 		{
 			id: "search",
 			title: "Built to Be Found",
 			description:
-				"We build every site with search engine optimization, relevant keywords, clean code, proper metadata, and Google Search Console setup so your practice shows up in the right searches.",
+				"A beautiful website does not help if nobody sees it. We build every site with SEO best practices, metadata, Google Search Console, and search visibility in mind so the right clients can actually find you.",
 			icon: "search",
 		},
 		{
 			id: "accessibility",
 			title: "Accessible to Everyone",
 			description:
-				"We build every site to WCAG 2.1 AA accessibility standards, so your site works for every visitor regardless of ability or how they access the web.",
+				"Your website should work for everyone who needs it. Every site is built to WCAG 2.1 AA standards so it works for visitors with visual, motor, or cognitive differences, regardless of how they access the web.",
 			icon: "accessibility",
 		},
 		{
 			id: "chart",
 			title: "Real Data, Real Insight",
 			description:
-				"We set up and verify Google Analytics on every project, giving you a clear picture of who is visiting your site, where they are coming from, and how they are finding you online.",
+				"Know what is working instead of guessing. We set up Google Analytics on every project so you have a clear picture of how visitors find your site, what they are reading, and how your presence is performing over time.",
 			icon: "chart",
 		},
 	],
@@ -97,24 +97,26 @@ const featureGridConfig = {
 const audienceConfig = {
 	id: "audience",
 	heading: "Built for therapists and small practices.",
-	body: "If you are building or growing a private practice and want a digital presence that reflects the quality of your work, you are in the right place.",
+	body: "As more clients begin their search for therapy online, a strong digital presence is no longer optional. Whether you are launching a private practice or looking to grow an established one, your website should help you stand out, communicate your expertise, and connect with the right clients. We build websites specifically for therapists, combining thoughtful design with the tools, integrations, and standards a modern practice needs.",
 	variant: "split",
 	items: [
 		{
 			id: "a1",
-			text: "Solo therapists and counselors in private practice",
+			text: "HIPAA-conscious guidance on how client information is handled on your site",
 		},
 		{
 			id: "a2",
-			text: "Small group practices ready to grow their online presence",
+			text: "Accessibility standards relevant to healthcare providers",
 		},
+
 		{
 			id: "a3",
-			text: "Mental health professionals who want to be found by the right clients",
+			text: "Fully custom design, not template-driven limitations",
 		},
 		{
 			id: "a4",
-			text: "Practitioners who want a complete digital foundation, not just a website",
+
+			text: "Designed specifically around how therapy clients search for and choose providers",
 		},
 	],
 	cta: null,
@@ -154,9 +156,9 @@ const stepsConfig = {
 		},
 		{
 			id: "step-5",
-			title: "We stay",
+			title: "We monitor",
 			description:
-				"For 90 days after launch we monitor your analytics, track how Google is indexing your site, and handle anything that needs attention. We will make sure your practice has the solid digital presence it deserves.",
+				"For 90 days after launch we monitor your analytics, track how Google is indexing your site, and handle anything that needs attention. We will make sure your practice has the solid web presence it deserves.",
 		},
 	],
 };
@@ -164,8 +166,8 @@ const stepsConfig = {
 
 const auditCtaConfig = {
 	id: "audit-cta",
-	eyebrow: "Already have a website?",
-	heading: "Find out why it is not working.",
+	eyebrow: null,
+	heading: "Already have a website?",
 	body: "There is more to a digital presence than a beautiful design. The right technical foundation is what makes your practice visible in search, and what ensures your site meets the accessibility and HIPAA standards expected of healthcare providers.",
 	items: [
 		{ id: "a1", text: "Technical and indexing issues" },
@@ -180,7 +182,7 @@ const auditCtaConfig = {
 		description: "A detailed report plus a 30-min walkthrough call.",
 		cta: {
 			text: "Learn more",
-			href: "/audit",
+			href: "/services/audit",
 			variant: "primary",
 			external: false,
 		},

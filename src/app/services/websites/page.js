@@ -1,20 +1,20 @@
 import React from "react";
-import PageHero from "../components/sections/pageHero/PageHero";
-import ChipNav from "../components/ui/chipNav/ChipNav";
-import PricingCards from "../components/sections/pricingCard/PricingCard";
-import AddonsGrid from "../components/sections/addonsGrid/AddonsGrid";
-import TwoColumn from "../components/sections/twoColumn/TwoColumn";
-import OngoingSupport from "../components/sections/ongoingSupport/OngoingSupport";
-import GeometricNetwork from "../components/illustrations/GeometricNetwork";
-import CTABanner from "../components/sections/ctaBanner/CTABanner";
+import PageHero from "../../components/sections/pageHero/PageHero";
+import ChipNav from "../../components/ui/chipNav/ChipNav";
+import PricingCards from "../../components/sections/pricingCard/PricingCard";
+import AddonsGrid from "../../components/sections/addonsGrid/AddonsGrid";
+import TwoColumn from "../../components/sections/twoColumn/TwoColumn";
+import OngoingSupport from "../../components/sections/ongoingSupport/OngoingSupport";
+import GeometricNetwork from "../../components/illustrations/GeometricNetwork";
+import CTABanner from "../../components/sections/ctaBanner/CTABanner";
 
-import { generateMeta } from "../../../config/metadata";
+import { generateMeta } from "../../../../config/metadata";
 
 export const metadata = generateMeta({
 	title: "Website Packages",
 	description:
 		"One-page and multi-page website packages for therapists, starting at $2,500 flat fee. Includes SEO, analytics setup, and 90 days of post-launch support.",
-	path: "/websites",
+	path: "/services/websites",
 });
 
 const servicesHeroConfig = {
@@ -51,7 +51,7 @@ const pricingConfig = {
 	eyebrow: "Packages",
 	heading: "Choose the right foundation for your practice.",
 	subheading:
-		"Both packages include everything you need to launch. The difference is depth.",
+		"Both packages include everything you need to launch. The difference is how much of your practice you want to present online",
 	packages: [
 		{
 			id: "one-page",
@@ -109,7 +109,7 @@ const addonsConfig = {
 			id: "additional-page",
 			name: "Additional Page",
 			description:
-				"A fully designed, written, and SEO optimized page added to your multi-page site.",
+				"Expand your website as your practice grows. Whether you are adding new services, resources, or content, additional pages keep your site current. Includes a fully designed, written, and SEO-optimized page.",
 			price: "$200 per page",
 			compatibility: "Multi-page package only",
 		},
@@ -117,7 +117,7 @@ const addonsConfig = {
 			id: "newsletter",
 			name: "Newsletter Integration",
 			description:
-				"Mailchimp or similar platform integrated with a signup form embedded on your site.",
+				"Stay in touch with current and prospective clients beyond your website. We integrate Mailchimp or a similar platform with a signup form embedded directly on your site.",
 			price: "$200",
 			compatibility: "Both packages",
 		},
@@ -125,16 +125,15 @@ const addonsConfig = {
 			id: "cms",
 			name: "Blog and CMS",
 			description:
-				"Blog tool integration giving you a clean visual editor to publish content without touching code.",
+				"Publishing content is one of the most effective ways to build credibility and improve search visibility over time. We integrate a blog tool with a clean visual editor so you can publish without touching code.",
 			price: "$400",
 			compatibility: "Multi-page package only",
 		},
-
 		{
 			id: "content-writing",
 			name: "Monthly Blog Post",
 			description:
-				"One professionally written, SEO-optimized blog post per month published to your site. Available for sites with the Blog and CMS add-on.",
+				"Consistent content keeps your site active and helps you rank for the searches your clients are already making. One professionally written, SEO-optimized post published to your site each month.",
 			price: "$150 per post",
 			compatibility: "Requires Blog and CMS add-on",
 		},
@@ -142,7 +141,7 @@ const addonsConfig = {
 			id: "arabic",
 			name: "Arabic and English Page",
 			description:
-				"A bilingual page for practices serving Arabic-speaking communities, with SEO for both languages.",
+				"Reach Arabic-speaking clients in their language. A fully bilingual page designed for practices serving Arabic-speaking communities, with SEO optimized for both languages.",
 			price: "$300",
 			compatibility: "Both packages",
 		},

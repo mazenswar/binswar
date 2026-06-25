@@ -1,17 +1,17 @@
 import React from "react";
-import PageHero from "../components/sections/pageHero/PageHero";
-import AuditIcon from "../components/illustrations/AuditIcon";
-import FeatureGrid from "../components/sections/featureGrid/FeatureGrid";
-import Steps from "../components/sections/steps/Steps";
-import PricingCards from "../components/sections/pricingCard/PricingCard";
-import CTABanner from "../components/sections/ctaBanner/CTABanner";
-import { generateMeta } from "../../../config/metadata";
+import PageHero from "../../components/sections/pageHero/PageHero";
+import AuditIcon from "../../components/illustrations/AuditIcon";
+import FeatureGrid from "../../components/sections/featureGrid/FeatureGrid";
+import Steps from "../../components/sections/steps/Steps";
+import PricingCards from "../../components/sections/pricingCard/PricingCard";
+import CTABanner from "../../components/sections/ctaBanner/CTABanner";
+import { generateMeta } from "../../../../config/metadata";
 
 export const metadata = generateMeta({
 	title: "Website Audit",
 	description:
 		"A $50 audit covering technical SEO, accessibility, performance, and HIPAA risk on your existing site. Delivered as a clear report with a 30-minute walkthrough call.",
-	path: "/audit",
+	path: "/services/audit",
 });
 
 const auditHeroConfig = {
