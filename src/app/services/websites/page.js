@@ -88,12 +88,6 @@ const pricingConfig = {
 			],
 		},
 	],
-	// cta: {
-	// 	text: "Book a free consultation",
-	// 	href: "https://calendly.com/binswar",
-	// 	variant: "primary",
-	// 	external: true,
-	// },
 };
 
 // addons config
@@ -190,12 +184,7 @@ const ongoingSupportConfig = {
 			text: "One-off consulting calls on SEO, analytics, or site performance",
 		},
 	],
-	// cta: {
-	// 	text: "Book a free consultation",
-	// 	href: "https://calendly.com/binswar",
-	// 	variant: "primary",
-	// 	external: true,
-	// },
+
 	classNames: "blockTint",
 };
 // CTA Banner

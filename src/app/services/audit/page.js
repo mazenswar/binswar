@@ -132,12 +132,6 @@ const auditPricingConfig = {
 			],
 		},
 	],
-	// cta: {
-	// 	text: "Book a free consultation",
-	// 	href: "https://calendly.com/binswar",
-	// 	variant: "primary",
-	// 	external: true,
-	// },
 };
 // cta banner
 const ctaBannerConfig = {
@@ -146,7 +140,7 @@ const ctaBannerConfig = {
 	variant: "brand",
 	cta: {
 		text: "Book a free consultation",
-		href: "https://calendly.com/binswar",
+		href: "https://calendly.com/mazen-binswar/30min",
 		variant: "secondary",
 		external: true,
 	},

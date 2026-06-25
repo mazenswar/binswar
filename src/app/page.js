@@ -26,8 +26,9 @@ const heroConfig = {
 		"We help therapists and small practices build a web presence that reflects the quality of their work and helps the right clients find them.",
 	cta: {
 		text: "Book a free consultation",
-		href: "/contact",
+		href: "https://calendly.com/mazen-binswar/30min",
 		variant: "primary",
+		external: true,
 	},
 	// ctaSecondary: {
 	// 	text: "Already have a website? Request an audit",

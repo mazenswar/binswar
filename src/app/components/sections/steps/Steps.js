@@ -75,7 +75,7 @@ export default function Steps({ stepsConfig }) {
 						<Button
 							className="steps__cta"
 							text="See our full process"
-							href="/websites/process"
+							href="/services/websites/process"
 							variant="secondary"
 						/>
 					) : null}

@@ -25,10 +25,6 @@ const navConfig = {
 			id: "services",
 			label: "Services",
 			href: "/services",
-			// items: [
-			// 	{ id: "websites", label: "Websites", href: "/websites" },
-			// 	{ id: "audit", label: "Audit", href: "/audit" },
-			// ],
 		},
 		{
 			id: "case-studies",

@@ -17,9 +17,9 @@ export const metadata = generateMeta({
 
 const pageHeroConfig = {
 	eyebrow: "Case Study",
-	heading: "The first site I ever built end to end, and what it taught me.",
+	heading: "Building a digital foundation for long-term growth.",
 	subheading:
-		"CALM Therapy is a New Jersey practice I've worked with since before Binswar existed. I handled the website, the SEO, and everything digital, from a blank page to where it stands today. I didn't start out knowing this work. I learned it by doing it, on a real practice, with real stakes, and that's exactly why I trust what I know now.",
+		"This case study follows the development of an East Coast-based therapy practice whose website was built from the ground up, including design, content strategy, technical SEO, accessibility, analytics, and ongoing search optimization. What began as a new website evolved into a long-term digital asset that continues to generate visibility, attract prospective clients, and support the growth of the practice.",
 	align: "left",
 	illustration: <TrendUp />,
 };
@@ -27,7 +27,7 @@ const pageHeroConfig = {
 const chipNavConfig = {
 	label: "Jump to section",
 	chips: [
-		{ id: "starting-point", label: "Starting Point" },
+		{ id: "starting-point", label: "The Challenge" },
 		{ id: "what-changed", label: "What Changed" },
 		{ id: "results", label: "Results" },
 		{ id: "still-going", label: "Still Going" },
@@ -36,12 +36,12 @@ const chipNavConfig = {
 
 const startingPointConfig = {
 	id: "starting-point",
-	eyebrow: "Where it began",
-	heading: "A site that existed, but wasn't doing much.",
+	eyebrow: "The challenge",
+	heading: "Visibility.",
 	paragraphs: [
-		"Early on, the blog lived on Medium, separate from the site itself, which meant every piece of writing was driving readers somewhere else instead of building anything on CALM's own domain.",
-		"On page SEO was bare minimum. Page titles and descriptions were generic, often missing entirely. There was no real keyword strategy behind any of it, no thought given to how someone actually searching for support would phrase what they were going through.",
-		"The result was a site that looked fine but stayed largely invisible. Search Console showed it: low single digit clicks some months, average rankings buried past page three.",
+		"The website provided a strong foundation for the practice. It looked professional, clearly communicated the services being offered, and reflected the therapist's approach and values.",
+		"However, like many new websites, visibility was limited in the beginning. Technical SEO was minimal, page titles and meta descriptions had not been fully optimized, and there was little content for search engines to index beyond the core service pages. Blog content was being published on a third-party platform, which meant every piece of writing was driving readers elsewhere instead of building authority on the practice's own domain.",
+		"This highlighted a challenge many therapy practices face: a website can look great and still struggle to attract visitors if it isn't supported by a broader search and content strategy.",
 	],
 	classNames: "blockTint",
 };
@@ -49,39 +49,39 @@ const startingPointConfig = {
 const whatChangedConfig = {
 	heading: "What changed",
 	subheading:
-		"Not one action but several changes made together. It's difficult to pinpoint what had the most impact, but collectively they changed how the site performed.",
+		"The site's growth came from a series of intentional improvements informed by performance data, search visibility, and ongoing analysis rather than any single change.",
 	cta: false,
 	steps: [
 		{
 			id: "step-1",
-			title: "Brought the blog home",
+			title: "Content stayed on the site",
 			description:
-				"Migrated writing off Medium and onto the site itself using Sanity as a real CMS, meaning every post now lives on CALM's own domain instead of pointing traffic elsewhere.",
+				"The practice had already been producing thoughtful, high-quality content, but it was being published on a third-party platform. By migrating that content onto the site through a dedicated blog and CMS, the site was able to build authority and capture the value of that traffic directly. One article alone generated more than 11,000 impressions and became the highest-performing page on the entire site, outperforming even the homepage.",
 		},
 		{
 			id: "step-2",
-			title: "Fixed the fundamentals",
+			title: "Technical foundations were strengthened",
 			description:
-				"Titles, meta descriptions, and canonical tags on every page. The unglamorous groundwork that's easy to skip and expensive to skip.",
+				"Page titles, meta descriptions, internal linking, canonical tags, and other on-page SEO elements were reviewed and optimized. While these details are often invisible to visitors, they help search engines better understand, index, and rank website content.",
 		},
 		{
 			id: "step-3",
-			title: "Expanded the content",
+			title: "The content footprint expanded",
 			description:
-				"Added breadth where there wasn't any, including dedicated specialty pages like OCD, giving search engines and real visitors more to actually find.",
+				"Additional specialty pages and targeted content were added to better reflect the breadth of services being offered. This created more opportunities for both search engines and prospective clients to discover the practice through relevant searches.",
 		},
 		{
 			id: "step-4",
-			title: "Rebuilt the site itself",
+			title: "The site was rebuilt",
 			description:
-				"A full visual and structural redesign, with performance and mobile optimization built in alongside everything else. The site now ranks meaningfully better on mobile than desktop, average position 7.6 versus 15.2, which matters since most people searching for a therapist are doing it from their phone.",
+				"A full visual and structural redesign with performance and mobile optimization built in. The site now ranks meaningfully better on mobile than desktop, average position 7.6 versus 15.2, which matters since most people searching for a therapist are doing it from their phone.",
 		},
 	],
 };
 
 const statGridConfig = {
 	id: "results",
-	heading: "The results, plainly",
+	heading: "The results",
 	subheading:
 		"Averages across full months. Pulled directly from Google Search Console.",
 	stats: [
@@ -116,7 +116,7 @@ const positionTrendConfig = {
 	id: "trend-position",
 	heading: "Average position over time",
 	subheading:
-		"Every other month shown for clarity. Position got worse before it got better, then held steady in the page-one range.",
+		"The goal was not a short-term traffic spike but sustained improvement over time. While rankings naturally fluctuate, the long-term trend reflects steady gains as content expanded, technical improvements accumulated, and the site's authority grew.",
 	unitLabel: "Average position",
 	invert: true,
 	points: [
@@ -131,14 +131,13 @@ const positionTrendConfig = {
 	],
 	footnote:
 		"Source: Google Search Console, sampled every other month, Feb 2025 – Apr 2026.",
-	// classNames: "blockTint",
 };
 
 const impressionsTrendConfig = {
 	id: "trend-impressions",
 	heading: "Monthly impressions over time",
 	subheading:
-		"Every other month shown for clarity. From scattered double digits to a sustained four-figure plateau.",
+		"As the site's visibility increased, it began appearing more frequently in relevant search results, creating more opportunities for prospective clients to discover the practice. The growth below reflects a steady expansion in the site's search presence over time.",
 	unitLabel: "Impressions",
 	invert: false,
 	points: [
@@ -158,42 +157,32 @@ const impressionsTrendConfig = {
 
 const stillGoingConfig = {
 	id: "still-going",
-	eyebrow: "Still going",
+	eyebrow: "SEO is an ongoing process",
 	heading: "This isn't a finished story.",
 	paragraphs: [
-		"Some pages on the site still aren't pulling their weight. The fees and insurance page, for example, gets real impressions but almost no clicks, something worth digging into rather than hiding.",
-		"That's the nature of SEO. It's not a one-time fix you launch and forget, it's an ongoing effort that keeps responding to what's actually happening in search. CALM's results came from sustained attention over time, not a single redesign.",
+		"One of the most common misconceptions about SEO is that it's something you set up once and forget. In reality, search visibility develops over time. Search engines continually evaluate content, user behavior, site structure, and relevance, which means rankings naturally change as websites grow and evolve.",
+		"The results shown here were not the product of a single change. They emerged from a combination of strong technical foundations, thoughtful content, expanded site structure, and ongoing improvements that helped the website become more useful to both visitors and search engines.",
+		"Some pages still aren't pulling their weight. The fees and insurance page, for example, gets real impressions but almost no clicks. That's worth digging into rather than ignoring, and it's a good example of the kind of ongoing analysis that keeps a site moving in the right direction.",
 	],
-	// classNames: "blockTint",
-};
-const blogProofConfig = {
-	id: "blog-proof",
-	eyebrow: "One specific result",
-	heading:
-		"One blog post outperformed every page on the site, including the homepage.",
-	paragraphs: [
-		"After moving the blog onto the site itself, a single post on compassion and integrity pulled in over 11,000 impressions, more than four times the homepage's total, and became the single best-performing page on the entire site.",
-		"That's the clearest evidence that bringing the writing home, rather than leaving it on Medium, actually mattered. One well-written post, sitting on the domain it's meant to support, did more work than the rest of the site combined.",
-	],
-	classNames: "blockTint",
 };
 
 const ctaBannerConfig = {
 	heading: "Want to see what this looks like for your practice?",
 	subheading:
 		"Every site starts somewhere. Let's talk about where yours could go.",
-	variant: "brand",
+	// variant: "brand",
+	classNames: "blockTint",
 	cta: {
 		text: "Book a free consultation",
 		href: "https://calendly.com/mazen-binswar/30min",
 		variant: "primary",
+		external: true,
 	},
 	secondaryCta: {
 		text: "See our services",
 		href: "/services",
 		variant: "secondary",
 	},
-	// classNames: "blockTint",
 };
 
 export default function CalmCaseStudyPage() {
@@ -207,7 +196,6 @@ export default function CalmCaseStudyPage() {
 			<TrendChart trendChartConfig={positionTrendConfig} />
 			<TrendChart trendChartConfig={impressionsTrendConfig} />
 			<TwoColumn twoColumnConfig={stillGoingConfig} />
-			<TwoColumn twoColumnConfig={blogProofConfig} />
 			<CTABanner ctaBannerConfig={ctaBannerConfig} />
 		</>
 	);
