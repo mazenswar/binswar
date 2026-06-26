@@ -19,9 +19,15 @@ const pageHeroConfig = {
 	eyebrow: "Case Study",
 	heading: "Building a digital foundation for long-term growth.",
 	subheading:
-		"This case study follows the development of an East Coast-based therapy practice whose website was built from the ground up, including design, content strategy, technical SEO, accessibility, analytics, and ongoing search optimization. What began as a new website evolved into a long-term digital asset that continues to generate visibility, attract prospective clients, and support the growth of the practice.",
+		"This case study follows the development of Calm Therapy, an East Coast-based therapy practice whose website was built from the ground up, including design, content strategy, technical SEO, accessibility, analytics, and ongoing search optimization. What began as a new website evolved into a long-term digital asset that continues to generate visibility, attract prospective clients, and support the growth of the practice.",
 	align: "left",
 	illustration: <TrendUp />,
+	cta: {
+		text: "Check out Calm Therapy's website",
+		href: "https://calmtherapy.center",
+		variant: "secondary",
+		external: true,
+	},
 };
 
 const chipNavConfig = {
